@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Register and view Drivers
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+        <link href="pstyles.css" rel="stylesheet" type="text/css" />
+     
+    </head>
+    <body>
+        <marquee><h3>This Christmas 25% OFF on SUVs.  Free Rides on first booking. Hurry Now</h3></marquee>
+		<div class="logoBackground">
+  	<div class="logo"><h6>CHAUFFEUR<h6></div>
+    
+  </div>
+		<div class="menu">
+  	<ul>
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="">Customers</a></li>
+		<li id="active"><a href="">Chauffeur</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="book.html">Book Car</a></li>
+		<li><a href="return.html">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+    </ul>
+  </div>
+	<div class="leftContent">
+    <b><form action="regchauffeur.php" method="post">
+	<h1> ADD CHAUFFEUR </h1>
+First Name: <input type="text" name="fname"/><br><br>
+Last Name: <input type="text" name="lname"/><br><br>
+Age : <input type="text" name="age"/><br><br>
+Mobile: <input type="text" name="mobile"/><br><br>
+Driving License No: <input type="text" name="dlno"/><br><br>
+
+<input type="submit" name="submit" value="Register">
+</form></b>	
+    </div>	
+
+		
+	<div class="rightContent">
+	<b><form action="viewchauffeur.php" method="post" >
+	<h1> VIEW CHAUFFEURS </h1>
+	<input type="submit" value="View"/>
+	</form></b>	
+	</div>
+	
+	</body>
+	</html>

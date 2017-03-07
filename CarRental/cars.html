@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Add and view cars, Update rates
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+        <link href="pstyles.css" rel="stylesheet" type="text/css" />
+     
+    </head>
+    <body>
+        <marquee><h3>This Christmas 25% OFF on SUVs.  Free Rides on first booking. Hurry Now</h3></marquee>
+		<div class="logoBackground">
+  	<div class="logo"><h6>CARS<h6></div>
+    
+  </div>
+		<div class="menu">
+  	<ul>
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="customer.html">Customers</a></li>
+		<li><a href="chauffeur.html">Chauffeur</a></li>
+        <li id="active"><a href="">Cars</a></li>
+        <li><a href="book.html">Book Car</a></li>
+		<li><a href="return.html">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+    </ul>
+  </div>
+	
+<div class="leftContent">
+    <b><form action="registercar.php" method="post" >
+	<h1> ADD CAR </h1>
+License No: <input type="text" name="lno"/><br><br>
+Model: <input type="text" name="model"/><br><br>
+Year : <input type="text" name="year"/><br><br>
+Car type: <select name = "Cartype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select><br><br>
+Car Owner: <select name = "Carown">
+<option>Individual</option>
+<option>Bank</option>
+<option>Company</option>
+</select><br><br>
+<h2>Enter Owner Details : </h2><br>
+Unique ID: <input type="text" name="uid"/><br><br>
+Name: <input type="text" name="oname"/><br><br>
+City : <input type="text" name="city"/><br><br>
+<input type="submit" name="submit" value="Register">
+</form></b>	
+    </div>	
+	
+	
+	<div class="rightContent">
+	<h1> VIEW CARS & RATES</h1>
+	<form action="viewcar.php" method="post">
+	Select Car type to view: <select name="Ctype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select>
+<input type="submit" name="submit1" value="View">
+</form>
+
+<br><br><br><br>
+
+<h1> UPDATE RENTAL RATES </h1>
+<form action="update.php" method="post">
+Select Car type to update: <select name = "Ctype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select><br><br>
+Daily Rate: <input type="text" name="udrate"/><br><br>
+Weekly Rate: <input type="text" name="uwrate"/><br><br>
+<input type="submit" name="submit1" value="Update">
+</form>
+	</div>
+	
+	</body>
+	</html>

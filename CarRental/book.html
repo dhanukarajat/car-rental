@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Book cars based availability
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+        <link href="pstyles.css" rel="stylesheet" type="text/css" />
+     
+    </head>
+    <body>
+        <marquee><h3>This Christmas 25% OFF on SUVs.  Free Rides on first booking. Hurry Now</h3></marquee>
+		<div class="logoBackground">
+  	<div class="logo"><h6>BOOKINGS<h6></div>
+    
+  </div>
+		<div class="menu">
+  	<ul>
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="customer.html">Customers</a></li>
+		<li><a href="chauffeur.html">Chauffeur</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li id="active"><a href="">Book Car</a></li>
+		<li><a href="return.html">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+    </ul>
+  </div>
+	
+<div class="leftContent">
+    <b><form action="available.php" method="post" >
+		<h1> BOOK A CAR </h1><br><br>
+Enter Customer ID: <input type="text" name="cbid"/><br><br>
+Enter date yyyy-mm-dd: <input type="text" name="Sdate"/><br><br>
+Select Car type: <select name = "Ctype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select><br><br>
+Rent type: <select name = "Rtype">
+<option>Daily</option>
+<option>Weekly</option>
+</select><br><br>
+No of days : <select name = "Days">
+<option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
+</select><br><br>
+No of weeks : <select name = "Weeks">
+<option>0</option><option>1</option><option>2</option><option>3</option>
+</select><br><br>
+<input type="submit" name="check" value="Check Availability"><br><br>
+
+Enter Vehicle id: <input type="text" name="Vehicleid"/><br><br>
+<input type="submit" name="book" value="Book">
+</form></b>	
+
+<br>
+<b><form action="viewrental.php" method="post" >
+		<h2> VIEW ACTIVE & SCHEDULED RENTALS </h2>
+		<input type="submit" name="submit1" value="View">
+</form></b>
+    </div>	
+	
+	
+	<div class="rightContent">
+<SCRIPT LANGUAGE="JavaScript">
+
+var num=1
+img1 = new Image ()
+img1.src = "images/1.jpg"
+img2 = new Image ()
+img2.src = "images/2.jpg"
+img3 = new Image ()
+img3.src = "images/3.jpg"
+img4 = new Image ()
+img4.src = "images/4.jpg" 
+img5 = new Image ()
+img5.src = "images/5.jpeg" 
+img6 = new Image ()
+img6.src = "images/6.jpg" 
+
+text1 = "MEDIUM"
+text2 = "S.U.V"
+text3 = "COMPACT"
+text4 = "LARGE"
+text5 = "TRUCK"
+text6 = "VAN"
+
+function slideshowUp()
+{
+num=num+1
+if (num==7)
+{num=1}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+function slideshowBack()
+{
+num=num-1
+if (num==0)
+{num=6}
+document.mypic.src=eval("img"+num+".src")
+document.joe.burns.value=eval("text"+num)
+}
+
+</SCRIPT>
+<!-- The Image and Form Codes are Below --> 
+<CENTER>
+<IMG SRC="images/1.jpg" NAME="mypic" BORDER=0 HEIGHT="380" WIDTH="500">
+<FORM NAME="joe">
+<INPUT TYPE="text" WIDTH="100" NAME="burns" VALUE="Medium">
+</FORM><A HREF="JavaScript:slideshowBack()"> Back</A>  <A HREF="JavaScript:slideshowUp()"> Next</A> 
+
+
+	</div>
+	
+	</body>
+	</html>
